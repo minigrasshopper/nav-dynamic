@@ -8,11 +8,11 @@
 
 ## 字段说明
 * navBackgroundInit: '#ffffff',
-		String类型；导航栏背景颜色（初始值）；进入页面时，展示的背景颜色；
-		当nav要设置透明时，可设置成'transparent';
+> String类型；导航栏背景颜色（初始值）；进入页面时，展示的背景颜色；
+  当nav要设置透明时，可设置成'transparent';
 * navBackgroundRoll: '#000000',
-		String类型；导航栏背景颜色（滚动值）；滚动页面时，展示的背景颜色；
-		当nav要设置透明时，可设置成'transparent';
+> String类型；导航栏背景颜色（滚动值）；滚动页面时，展示的背景颜色；
+	当nav要设置透明时，可设置成'transparent';
 * titleColorInit: '#ffffff',
 		String类型；文本颜色（初始值）；进入页面时，展示的文本颜色；
 		只能设置成16进制，不可简写，栗子：'#ffffff'不能简写成'#fff'，
