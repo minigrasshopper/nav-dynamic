@@ -27,8 +27,8 @@ Component({
       titleTextInit: '', // 标题文字-初始值
       titleTextRoll: '', // 标题文字-滚动值
       historyShow: true, // 历史图标是否显示
-      scrollMin: 50, // 最小滚动间距（保持初始值，设置为0），单位px
-      scrollMax: 200, // 最大滚动间距（保持初始值，设置为0），单位px
+      scrollMin: 50, // 最小滚动间距，单位px
+      scrollMax: 200, // 最大滚动间距，单位px
       homeShow: false, // 是否展示home图标
       homeJudgeStack: true, // home图标展示是否判断页面栈
       homePath: '/pages/findModule/pages/index/index', // 默认的home页面
@@ -137,9 +137,6 @@ Component({
     },
     scrollHandle(scrollTop) {
       // 页面滚动事件回调
-      if (this.data.options.scrollMax == 0) {
-        return
-      }
       let navOpacity = '';
       let navBackground = '';
       let titleColor = '';
