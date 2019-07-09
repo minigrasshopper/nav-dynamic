@@ -1,0 +1,16 @@
+<view class='ant-nav-dynamic-wrapper' wx:if='{{compatible}}' style='height: {{navHeight}}px;'>
+  <view class='ant-nav-status-area' style='height: {{statusHeight}}px;background: {{navBackground}};opacity: {{navOpacity}}'></view>
+  <view class='ant-nav-content-area' style='background: {{navBackground}};opacity: {{navOpacity}}'>
+    <view class='ant-nav-history-home-box' style='height: {{navHeight-statusHeight}}px;'>
+      <view class='ant-nav-history-chunk' wx:if='{{historyShow}}' catchtap='historyHandle'>
+        <text class='arrow-back' style='border-color: {{titleColor}}'></text>
+      </view>
+      <image class='ant-nav-home {{historyShow?"":"hasgap"}}' catchtap='homeHandle' wx:if='{{homeShow && homeColor=="white"}}' src='./icon_home_white.png' />
+      <image class='ant-nav-home {{historyShow?"":"hasgap"}}' catchtap='homeHandle' wx:if='{{homeShow && homeColor=="black"}}' src='./icon_home_black.png' />
+      <slot name='ant-nav-slot'></slot>
+    </view>
+    <view class='ant-nav-title-box' wx:if='{{titleText}}' style='color: {{titleColor}};font-size: {{titleSize}}px;'>
+      {{titleText}}
+    </view>
+  </view>
+</view>

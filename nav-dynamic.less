@@ -1,0 +1,70 @@
+view,
+cover-view,
+cover-image,
+text,
+swiper,
+swiper-item,
+input,
+picker,
+textarea,
+form {
+  box-sizing: border-box;
+}
+
+.flex(@direction: row, @justify: center, @align: center) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.ant-nav-dynamic-wrapper {
+  position: fixed;
+  z-index: 99999;
+  left: 0;
+  top: 0;
+  width: 750rpx;
+  .flex(column, flex-start, flex-start);
+
+  .ant-nav-status-area {
+    width: 100%;
+  }
+
+  .ant-nav-content-area {
+    position: relative;
+    width: 100%;
+    flex: 1;
+
+    .ant-nav-history-home-box {
+      .flex(row, flex-start, center);
+      .ant-nav-history-chunk {
+        width: 80rpx;
+        height: 100%;
+        .flex(row, center, center);
+
+        .arrow-back {
+          transform: rotate(45deg);
+          border: 4rpx solid transparent;
+          border-top: none;
+          border-right: none;
+          width: 24rpx;
+          height: 24rpx;
+        }
+      }
+
+      .ant-nav-home {
+        width: 40rpx;
+        height: 40rpx;
+        &.hasgap{
+          margin-left: 20rpx;
+        }
+      }
+    }
+    .ant-nav-title-box {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+}
