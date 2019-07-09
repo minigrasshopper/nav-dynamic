@@ -8,42 +8,42 @@
 
 ## 字段说明
 * navBackgroundInit: '#ffffff',
-> String类型；导航栏背景颜色（初始值）；进入页面时，展示的背景颜色；
-  当nav要设置透明时，可设置成'transparent';
+	- String类型；导航栏背景颜色（初始值）；进入页面时，展示的背景颜色；
+	- 当nav要设置透明时，可设置成'transparent';
 * navBackgroundRoll: '#000000',
-> String类型；导航栏背景颜色（滚动值）；滚动页面时，展示的背景颜色；
-	当nav要设置透明时，可设置成'transparent';
+	- String类型；导航栏背景颜色（滚动值）；滚动页面时，展示的背景颜色；
+	- 当nav要设置透明时，可设置成'transparent';
 * titleColorInit: '#ffffff',
-		String类型；文本颜色（初始值）；进入页面时，展示的文本颜色；
-		只能设置成16进制，不可简写，栗子：'#ffffff'不能简写成'#fff'，
+	- String类型；文本颜色（初始值）；进入页面时，展示的文本颜色；
+	- 只能设置成16进制，不可简写，栗子：'#ffffff'不能简写成'#fff'，
 * titleColorRoll: '#000000',
-		String类型；文本颜色（滚动值）；滚动页面时，展示的文本颜色；
-		只能设置成16进制，不可简写，栗子：'#ffffff'不能简写成'#fff'，
+	- String类型；文本颜色（滚动值）；滚动页面时，展示的文本颜色；
+	- 只能设置成16进制，不可简写，栗子：'#ffffff'不能简写成'#fff'，
 * titleTextInit: '初始标题',
-		String类型；标题文本（初始值）；进入页面时，展示的标题文本；
+- String类型；标题文本（初始值）；进入页面时，展示的标题文本；
 * titleTextRoll: '滚动标题',
-		String类型；标题文本（滚动值）；滚动页面时，展示的标题文本；
+- String类型；标题文本（滚动值）；滚动页面时，展示的标题文本；
 * historyShow: true,
-		Boolean类型；历史图标是否显示；
-		值为false，隐藏图标；值为true，当页面栈数量小于2时，隐藏图标，否则，显示图标；
+- Boolean类型；历史图标是否显示；
+- 值为false，隐藏图标；值为true，当页面栈数量小于2时，隐藏图标，否则，显示图标；
 * scrollMin: 50,
-		Number类型；最小滚动间距；单位px；
-		当页面滚动距离小于scrollMin时；组件的opacity值为0；
+- Number类型；最小滚动间距；单位px；
+- 当页面滚动距离小于scrollMin时；组件的opacity值为0；
 * scrollMax: 200,
-		Number类型；最大滚动间距；单位px；
-		当页面滚动距离大于scrollMax时；组件的opacity值为1；
+- Number类型；最大滚动间距；单位px；
+- 当页面滚动距离大于scrollMax时；组件的opacity值为1；
 * homeShow: false,
-		Boolean类型；是否展示home图标；
-		值为false，隐藏图标；值为true，还要设置homeJudgeStack再行判断；
+- Boolean类型；是否展示home图标；
+- 值为false，隐藏图标；值为true，还要设置homeJudgeStack再行判断；
 * homeJudgeStack: true,
-		Boolean类型；home图标展示是否判断页面栈；
-		值为false，显示图标；值为true，当页面栈数量小于2时，显示图标，否则，隐藏图标；
+- Boolean类型；home图标展示是否判断页面栈；
+- 值为false，显示图标；值为true，当页面栈数量小于2时，显示图标，否则，隐藏图标；
 * homePath: '/pages/findModule/pages/index/index',
-		String类型；home页面路径；
+- String类型；home页面路径；
 * homeColorInit: 'white',
-		String类型；home图标颜色（初始值）；进入页面时，展示的home图标颜色；取值：white / black；
+- String类型；home图标颜色（初始值）；进入页面时，展示的home图标颜色；取值：white / black；
 * homeColorRoll: 'black',
-		String类型；home图标颜色（滚动值）；滚动页面时，展示的home图标颜色；取值：white / black；
+- String类型；home图标颜色（滚动值）；滚动页面时，展示的home图标颜色；取值：white / black；
 
 ## 方法说明
 
