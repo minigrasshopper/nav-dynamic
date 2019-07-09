@@ -10,28 +10,28 @@ Component({
     compatible: wx.getSystemInfoSync().SDKVersion > '2.4.3' ? true : true, // 是否兼容，原生最低兼容基础库2.4.3版本，低于限制版本时，隐藏组件
     navHeight: 0, // 导航栏高度，单位px
     statusHeight: 0, // 状态栏高度，单位px
-    navOpacity: 0, // 导航栏的透明度 初始=1，到最小滚动点=0，到最大滚动点=1
+    navOpacity: 0, // 导航栏的透明度，初始=1，到最小滚动点=0，到最大滚动点=1
     titleSize: wx.getSystemInfoSync().fontSizeSetting, // 字体大小
     navBackground: '', // 导航栏背景颜色
     titleColor: '', // 标题颜色
     titleText: '', // 标题文本
     historyShow: false, // 历史图标是否显示
-    homeShow: false, // 是否展示home图标
-    homePath: '', // 默认的home页面
+    homeShow: false, // home图标是否显示
+    homePath: '', // home页面路径
     homeColor: '', // home图标颜色
     options: {
       navBackgroundInit: '#000000', // 导航栏背景颜色-初始值
       navBackgroundRoll: '#ffffff', // 导航栏背景颜色-滚动值
-      titleColorInit: '#ffffff', // 标题颜色-初始值 16进制
-      titleColorRoll: '#000000', // 标题颜色-滚动值 16进制
+      titleColorInit: '#ffffff', // 文本颜色-初始值 16进制
+      titleColorRoll: '#000000', // 文本颜色-滚动值 16进制
       titleTextInit: '', // 标题文字-初始值
       titleTextRoll: '', // 标题文字-滚动值
       historyShow: true, // 历史图标是否显示
       scrollMin: 50, // 最小滚动间距，单位px
       scrollMax: 200, // 最大滚动间距，单位px
-      homeShow: false, // 是否展示home图标
-      homeJudgeStack: true, // home图标展示是否判断页面栈
-      homePath: '/pages/findModule/pages/index/index', // 默认的home页面
+      homeShow: false, // home图标是否显示
+      homeJudgeStack: true, // home图标显示是否判断页面栈
+      homePath: '/pages/index/index', // home页面路径
       homeColorInit: 'white', // home图标颜色-初始值 white / black
       homeColorRoll: 'black', // home图标颜色-滚动值 white / black
     },
@@ -135,7 +135,7 @@ Component({
       this.data.options = target;
       this.initData();
     },
-    scrollHandle(scrollTop) {
+    scrollHandle(scrollTop = 0) {
       // 页面滚动事件回调
       let navOpacity = '';
       let navBackground = '';

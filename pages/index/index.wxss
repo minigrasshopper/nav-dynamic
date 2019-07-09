@@ -1,0 +1,6 @@
+.container{
+  width: 750rpx;
+  height: 2000rpx;
+  background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1562668064379&di=f57f94d258edb4eb17e6cd568c6431c0&imgtype=0&src=http%3A%2F%2Fuploads.5068.com%2Fallimg%2F1801%2F81-1P10Q60023.jpg') no-repeat;
+  background-size: cover;
+}
