@@ -9,11 +9,11 @@
 5. 设置组件插槽，允许开发者在组件上添加任意元素；
 
 ## 方法说明
-#### getNavHeight()
-###### 获取导航栏高度；单位px;
+* getNavHeight()
+#### 获取导航栏高度；单位px;
 
 * setOptions(options)
-###### 设置组件参数；
+#### 设置组件参数；
 options Object
 
 | 参数名称 | 类型 | 默认值 | 说明 | 备注 |
@@ -34,14 +34,16 @@ options Object
 | homeColorRoll | String | 'black' | home图标颜色（初始值） | white / black |
 
 * scrollHandle(scrollTop)
-###### 页面滚动事件回调；
+#### 页面滚动事件回调；调用这个方法可实现nav组件动态改变样式
 
 | 参数名称 | 类型 | 默认值 | 说明 | 备注 |
 | :----: | :----: | :----: | :----: | :----: |
 | scrollTop | Number | 0 | 页面滚动距离 | 无 |
 
 ## 插槽用法
-#### 插槽名称：ant-nav-slot
+#### 插槽名称 
+###### ant-nav-slot
+
 #### 插槽用法
 ```
 <comp-nav-dynamic id='comp-nav-dynamic'>
