@@ -9,7 +9,7 @@
 5. 设置组件插槽，允许开发者在组件上添加任意元素；
 
 ## 方法说明
-* getNavHeight()
+#### getNavHeight()
 ###### 获取导航栏高度；单位px;
 
 * setOptions(options)
