@@ -1,4 +1,4 @@
-<comp-nav-dynamic id='comp-nav-dynamic'></comp-nav-dynamic>
-<view class="container">
-  
-</view>
+<comp-nav-dynamic id='comp-nav-dynamic'>
+  <view slot='ant-nav-slot' style='color: red;'>我是插槽</view>
+</comp-nav-dynamic>
+<view class="container"></view>

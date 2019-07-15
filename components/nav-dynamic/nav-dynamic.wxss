@@ -30,7 +30,6 @@ form {
   flex: 1;
 }
 .ant-nav-dynamic-wrapper .ant-nav-content-area .ant-nav-history-home-box {
-  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
