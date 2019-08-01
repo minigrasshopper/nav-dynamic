@@ -142,13 +142,13 @@ Component({
       let titleColor = '';
       let titleText = '';
       let homeColor = '';
-      if (scrollTop < this.data.options.scrollMin) {
+      if (scrollTop <= this.data.options.scrollMin) {
         navOpacity = 1;
         navBackground = this.data.options.navBackgroundInit;
         titleColor = this.data.options.titleColorInit;
         titleText = this.data.options.titleTextInit;
         homeColor = this.data.options.homeColorInit;
-      } else if (scrollTop > this.data.options.scrollMax) {
+      } else if (scrollTop >= this.data.options.scrollMax) {
         navOpacity = 1;
         navBackground = this.data.options.navBackgroundRoll;
         titleColor = this.data.options.titleColorRoll;
